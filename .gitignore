@@ -1,0 +1,11 @@
+.env
+data/
+models/
+samples/_stt_cache/
+__pycache__/
+*.pyc
+.venv/
+# 체험판은 별도의 공개 저장소(mytone-preview)다 — 소스 저장소에 섞지 않는다
+preview/
+# 이 PC 전용 실행 설정(절대 경로 포함)
+.claude/

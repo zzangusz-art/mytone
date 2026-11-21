@@ -1,0 +1,13 @@
+# 내말투 상담 — 실행에 필요한 패키지
+fastapi>=0.115
+uvicorn>=0.30
+python-multipart>=0.0.9
+anthropic>=2.0,<3
+
+# 아래 세 줄은 버전을 고정한다. Windows 11 의 Smart App Control(앱 제어 정책)이 켜진 PC에서
+# 더 새 버전의 네이티브 모듈(.pyd)이 "애플리케이션 제어 정책에서 이 파일을 차단했습니다"로 막히는 것을 확인했다.
+# (2026-11-20 실측: pydantic-core 2.50.5·jiter 0.19.0 차단 / 아래 버전은 통과)
+# 정책이 꺼진 PC나 리눅스 서버에서는 이 세 줄을 지워도 된다.
+pydantic==2.13.4
+pydantic-core==2.46.4
+jiter==0.15.0
